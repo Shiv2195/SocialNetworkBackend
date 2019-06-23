@@ -37,8 +37,11 @@ const userSchema = new mongoose.Schema({
     resetPasswordLink: {
         data: String,
         default: ""
-    }
-});
+    },
+    role: {
+        type: String,
+        default: "subscriber"
+}});
 
 /**
  * Virtual fields are additional fields for a given model.
